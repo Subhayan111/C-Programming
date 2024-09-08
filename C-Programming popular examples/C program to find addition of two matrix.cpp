@@ -1,4 +1,4 @@
-// C program to find addtion of two matrix
+// C program to find addition of two matrix
 
 #include <stdio.h>
 int main() {
