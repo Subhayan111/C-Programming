@@ -1,4 +1,4 @@
-// C program to find the length of a string wothout using strlen()
+// C program to find the length of a string without using strlen()
 
 #include <stdio.h>
 int main() {
