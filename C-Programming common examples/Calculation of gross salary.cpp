@@ -2,13 +2,20 @@
 #include<stdio.h>
 int main()
 {
-	float bp,da,hra,grpay;
-	scanf("%f",&bp);
-	da=bp*0.4;
-	hra=bp*0.2;
-	grpay=bp+da+hra;
-	printf("Dearness Allowance=%f\n",da);
-	printf("House Rent Allowance=%f\n",hra);
-	printf("Gross pay of Ramesh=%f\n",grpay);
+	float bs,da,hra,gs;
+	printf("Enter basic salary:");
+	scanf("%f",&bs);
+	if (bs<1500)
+	{
+		hra=bs*0.1;
+		da=bs*0.9;
+	}
+	else
+	{
+		hra=500;
+		da=bs*0.98;
+	}
+	gs=bs+da+hra;
+	printf("Gross salary is=%.2f\n",gs);
 	return 0;
 }
